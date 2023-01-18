@@ -5,28 +5,216 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+  <script src="node_modules/lena.js/dist/browser.js"></script>
+  <script type="text/javascript">
+    function rojo () { 
+    // obten la imagen 
+    var imagenOriginal = document.getElementById("imagen-original");
+    // El canva donde la imagen procesada sera renderizada
+    var imagenFiltradaCanvas=document.getElementById("imagen");   
+    //Filtro s aplica en este caso el filtro rojo
+    var filter= LenaJS ["red"]; 
+    // Aplica el filtro
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+
+function gausin () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["bigGaussian"];   
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function azul () { 
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["blue"]; 
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function brillo () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["brightness"];
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+
+function negro () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["canny"];
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function contraste () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["contrast"];
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function gausin1 () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["gaussian"];
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function gris () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["grayscale"];    
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function green () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["green"];    
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function pass () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["highpass"];  
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function invertir () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["invert"];  
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function placian () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["laplacian"];
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function pass3 () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["lowpass3"];
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function pass5 () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["lowpass5"];  
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function espejo () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["mirror"];
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function granito () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["noise"];
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function horizontal () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");o
+    var filter= LenaJS ["prewittHorizontal"];
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function vertical() {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["prewittVertical"];  
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function rober () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["roberts"];
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function saturacion () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["saturation"];  
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function sepia () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["sepia"];   
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function sharpen () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["sharpen"];
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function sobelH () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["sobelHorizontal"];   
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+function sobelV () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["sobelVertical"];
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+
+}   function theresh () {  
+    var imagenOriginal = document.getElementById("imagen-original");
+    var imagenFiltradaCanvas=document.getElementById("imagen");
+    var filter= LenaJS ["thresholding"];    
+    LenaJS.filterImage(imagenFiltradaCanvas, filter, imagenOriginal);
+}
+
+
+</script>
+
 </head>
-<body style="background-color: #BFBFBF;">
-    <div style="margin: 0%;
-                padding-left: 33%;
-                padding-top: 5%;
-                padding-bottom: 3%;">
-        <img style="
-        box-shadow: 10px 10px 8px 10px #888888;border: 9px solid black;" src="logo.png" width="500px" >
+<style>
+    body{
+        background-color: #D97A07;
+    }
+button{
+   margin-left: 10%;
+   width: 7%;
+  
+  background-color: red
+}
+button:hover {
+    background-color: white
+}
+</style>
+<body>
+    <h1 style="text-align: center; color: azure; background-color: black;">filtros aplicados</h1>
+    <div style="padding-bottom: 5%; padding-left: 40%;">
+    <img src="mona.png" id="imagen-original" />
+    <canvas id="imagen"></canvas>
     </div>
-    <div style=" padding-left: 45%;
+   <div >
+    <button onclick="rojo();">Rojo</button>
+    <button onclick="gausin();">BigGaussian</button>
+    <button onclick="brillo();">Brightness</button>
+    <button onclick="negro();">Canny</button><br><br>
+    <button onclick="contraste();">Contrast</button>
+    <button onclick="gausin1();">Gaussian</button>
+    <button onclick="gris();">Grayscale</button>
+    <button onclick="green();">Green</button><br><br>
+    <button onclick="pass();">Highpass</button>
+    <button onclick="invertir();">Invert</button>
+    <button onclick="placian();">Laplacian</button>
+    <button onclick="pass3();">Lowpass3</button>
+    <button  onclick="pass5();">Lowpass5</button><br><br>
+    <button onclick="espejo();">Mirror</button>
+    <button onclick="granito();">Noise</button>
+    <button onclick="horizontal();">PrewittHorizontal</button>
+    <button onclick="vertical();">PrewittHorizontal</button>
+    <button onclick="saturacion();">Saturation</button><br><br>
+    <button onclick="sepia();">Sepia</button>
+    <button onclick="sharpen();">Sharpen</button>
+    <button onclick="sobelH();">SobelHorizontal</button>
+    <button onclick="sobelV();">SobelVertical</button>
+    <button onclick="theresh();">Thresholding</button>
     
-   
-    width: 5%;">
-        <nav class="bot">
-            <ul>
-            <a href="juego.html" style="text-decoration: none; color: black;" ><span style="
-            font-size: 45px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                 box-shadow: 10px 10px 8px 10px #888888;border: 7px solid black;background-color: rgb(137, 216, 33); width: 25%;">
-              Jugar
-              </span> </a>
     </div>
+
     
 </body>
 </html>
